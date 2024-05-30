@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+ <meta charset="UTF-8">
+ <meta name="description" content="Сайт для on-line навчання">
+ <meta name="keywords" content="навчання, онлайн, курси, освіта">
+ <meta name="author" content="Ваше Ім'я">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>On-line навчання</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background: url('img/background.jpg') no-repeat center center fixed;
+ background-size: cover;
+ color: #333;
+ }
+ header {
+ background-color: #4CAF50;
+ color: white;
+ padding: 1em;
+ text-align: center;
+ }
+ nav ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ background-color: #333;
+ }
+ nav ul li {
+ margin: 0 1em;
+ }
+ nav ul li a {
+ color: white;
+ text-decoration: none;
+ padding: 0.5em 1em;
+ display: block;
+ }
+ img {
+ display: block;
+ margin: 1em auto;
+ width: 150px;
+ height: auto;
+ transition: transform 0.3s ease; /* Додали анімацію для зображення */
+ }
+ img:hover {
+ transform: scale(1.2); /* Використовуємо transform: scale() для масштабування */
+ }
+ main {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+ padding: 1em;
+ }
+ section, aside {
+ padding: 1em;
+ background: white;
+ border-radius: 8px;
+ }
+ form {
+ margin-top: 1em;
+ }
+ label {
+ display: block;
+ margin-top: 1em;
+ }
+ .gradient-text {
+ background: linear-gradient(to right, #ff7e5f, #feb47b);
+ -webkit-background-clip: text;
+ color: transparent;
+ }
+ </style>
+</head>
+<body>
+<header>
+ <h1 class="gradient-text">Ласкаво просимо на сайт On-line навчання</h1>
+ <nav>
+ <ul>
+ <li><a href="index.html">Головна</a></li>
+ <li><a href="courses.html">Курси</a></li>
+ <li><a href="about.html">Про нас</a></li>
+ <li><a href="contact.html">Контакти</a></li>
+ </ul>
+ </nav>
+</header>
+<img src="img/avatar.jpg" alt="Зображення сайту" class="animated-image"> <!-- Замінили фото -->
+<main>
+ <section>
+ <article>
+ <h2>Про наші курси</h2>
+ <h3>Курс 1: Веб-розробка</h3>
+ <p>Детальний курс, що охоплює основи HTML, CSS та JavaScript.</p>
+ <ul>
+ <li>HTML
+ <ul>
+ <li>Основи</li>
+ <li>Семантичні теги</li>
+ </ul>
+ </li>
+ <li>CSS
+ <ul>
+ <li>Властивості</li>
+ <li>Анімації</li>
+ </ul>
+ </li>
+ </ul>
+ <h3>Курс 2: Програмування на Python</h3>
+ <p>Курс для початківців та професіоналів, які хочуть опанувати мову Python.</p>
+ <ol>
+ <li>Основи Python
+ <ul>
+ <li>Синтаксис</li>
+ <li>Типи даних</li>
+ </ul>
+ </li>
+ <li>Бібліотеки
+ <ul>
+ <li>NumPy</li>
+ <li>Pandas</li>
+ </ul>
+ </li>
+ </ol>
+ </article>
+ </section>
+ <aside>
+ <h2>Останні новини</h2>
+ <p>Наш новий курс з Machine Learning вже доступний!</p>
+ </aside>
+</main>
+<section>
+ <h2>Зареєструйтесь на курси</h2>
+ <form action="submit_form.php" method="post">
+ <label for="name">Ім'я:</label>
+ <input type="text" id="name" name="name" required>
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" required>
+ <label for="phone">Телефон:</label>
+ <input type="tel" id="phone" name="phone" required>
+ <input type="submit" value="Зареєструватися">
+ </form>
+</section>
+</body>
+</html>
